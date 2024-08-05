@@ -10,7 +10,7 @@ import { ToggleGroup } from "@/components/ui/toggle-group"
 
 export default function NavbarComponent() {
   return (
-    <header className="flex h-16 w-full shrink-0 items-center px-4 md:px-6 border-b fixed z-10 bg-background">
+    <header className="flex h-16 w-full shrink-0 items-center px-4 md:px-6 border-b fixed z-10 backdrop-blur-md bg-background/60 shadow-sm">
       <div className="mr-6 hidden lg:flex">
         <span className="flex flex-row gap-2 font-bold text-lg text-default tracking-tighter"><Droplet/>moyamu</span>
       </div>

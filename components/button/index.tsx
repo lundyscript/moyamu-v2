@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator } from "@/components/ui/dropdown-menu"
 import { DeleteModal } from "@/components/utils/modal"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import { Sun, Moon, Laptop, UserRound, LogOut, Settings, ShieldQuestion, ServerCog, MonitorSmartphone, RotateCw, Plus, ArrowDownToLine, GanttChart, Pencil, Search } from "lucide-react"
+import { Sun, Moon, Laptop, UserRound, LogOut, Settings, ShieldQuestion, ServerCog, MonitorSmartphone, Plus, ArrowDownToLine, Pencil, Loader } from "lucide-react"
 import { FcGoogle } from "react-icons/fc"
 import { FaGithub } from "react-icons/fa"
 
@@ -111,7 +111,7 @@ export const LogoutButton = ({children}: {children?: React.ReactNode}) => {
 export const LoadingButton = () => {
   return (
     <Button disabled variant={"default"} className="w-full">
-      <RotateCw size={17} className="mr-2 animate-spin" />
+      <Loader size={17} className="mr-2 animate-spin"/>
       Loading
     </Button>
   )
